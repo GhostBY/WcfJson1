@@ -14,10 +14,5 @@ namespace WcfJson1
         {
             return new Auto { Id = id, Company = "Bmw", Model = "x5", Price = "30000" };
         }
-
-        string IRestService.json(string id)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

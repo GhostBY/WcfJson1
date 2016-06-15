@@ -15,8 +15,8 @@ namespace WcfJson1
         [OperationContract]
         [WebInvoke(Method = "GET",
                    ResponseFormat = WebMessageFormat.Json,
-                   RequestFormat = WebMessageFormat.Json,
-                   UriTemplate = "json/id")]
-        string json(string id);
+                   BodyStyle =WebMessageBodyStyle.Wrapped,
+                   UriTemplate = "json/{id}")]
+        Auto json(string id);
     }
 }
